@@ -5,7 +5,6 @@
 This project uses monthly Canadian CPI data from the Bank of Canada to compare the cost of goods and services between two months. The user enters a price and two dates, and the program calculates the adjusted cost, percentage change, number of years, and average annual rate. It also displays the CPI values used and creates a graph showing Canadian CPI and annual inflation!
 
 
-
 **DESCRIPTION OF FILES**
 
 Inflation_Calculator.py
@@ -15,11 +14,30 @@ CPI.csv
     This file contains monthly Canadian CPI data downloaded from the Bank of Canada
 
 CPI_Graph.png
-    The inflation graph saved by the Infaltion_Calculator.py python program
+    The inflation graph saved by the Inflation_Calculator.py python program
 
 README.md
     Starting point: project description, running instructions, graph commentary, and a sample output.
 
+
+**HOW TO RUN PROGRAM**
+
+Please ensure python3 is installed. Download the project files and keep `Inflation_Calculator.py` and `CPI.csv` in the same folder.
+
+Open a terminal in that folder and install the required libraries: numpy, pandas, matplotlib
+```
+python3 -m pip install numpy pandas matplotlib
+```
+
+Run the program:
+
+```
+python3 Inflation_Calculator.py
+```
+
+Enter a positive price without dollar signs or commas. Then enter the first and second dates in `YYYY-MM` format, such as `2000-01`. Both dates must be within the available range printed by the program.
+
+Your results appear calculated in the terminal. Simultaneously, the program will open the graph and save it as `CPI_Graph.png`.
 
 
 **SAMPLE OUTPUT***
@@ -43,6 +61,7 @@ Average annual rate: 2.99%
 CPI for 2000-01: 93.5
 CPI for 2001-01: 96.3
 ```
+
 
 **GRAPH AND COMMENTARY**
 ![Canadian CPI and annual inflation](CPI_Graph.png)
